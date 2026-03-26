@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --primary-color: #D81B60;
+  /* Dark Pink */
+  /* Lavender - Old */
+  --secondary-color: #f7cac9;
+  /* Soft Pink */
+  --accent-color: #92a8d1;
+  /* Serenity Blue */
+  --bg-color: #fdfbf7;
+  /* Off-white/Cream */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --success-color: #b0e57c;
+  /* Mint */
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: #2c2c2c;
+  font-weight: 700;
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(157, 142, 195, 0.3);
+}
+
+.btn-primary-custom:hover {
+  background-color: #AD1457;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(157, 142, 195, 0.4);
+}
+
+.card-custom {
+  background: white;
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.pastel-bg {
+  background: linear-gradient(135deg, #fdfbf7 0%, #fff0f5 100%);
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
